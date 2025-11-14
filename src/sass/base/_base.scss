@@ -23,6 +23,19 @@ html {
   box-sizing: inherit;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: inline-block;
+  color: abstracts.$dark-blue;
+}
 /**
  * Basic styles for links
  */

@@ -1,3 +1,71 @@
+@use '../abstracts';
+@use '../components/button';
+
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    .header {
+        @extend .flex;
+        
+        &__navbar {
+            &--menu {
+                @extend .flex;
+                gap: 1rem;
+    
+                a {
+                    padding: 7px 15px;
+                }
+    
+                .deaplegalble {
+                    position: relative;
+                }
+    
+                .deaplegalble::after {
+                    content: '';
+                    width: 20px;
+                    height: 10px;
+                    background-image: url(../../../img/deaplegable.svg);
+                    background-repeat: no-repeat;
+                    position: absolute;
+                    top: 45%;
+                    left: 120%;
+    
+                }
+            }
+        }
+
+        &__nav {
+            @extend .flex;
+            gap: 4.5rem;
+
+            &--items {
+                @extend .flex;
+                gap: 2rem;
+            }
+
+            &--aut {
+                @extend .flex;
+                gap: 2.3rem;
+
+                &__btn1 {
+                    text-decoration: underline
+                }
+
+                &__btn2 {
+                    @extend .btn;
+                }
+            }
+        }
+
+    }
+}

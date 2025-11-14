@@ -8,17 +8,21 @@
 
 /// Regular font family
 /// @type List
-$text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+$text-font-stack: "Poppins", sans-serif;
 
 /// Code (monospace) font family
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
 // Colores:
+$green: #A9D6CB;
+$dark-blue: #264065;
+$gray: #FAF8F5;
+$text-color: #909090;
 
 /// Container's maximum width
 /// @type Length
-$max-width: 1180px !default;
+$max-width: 1600px !default;
 
 
 /// Breakpoints map

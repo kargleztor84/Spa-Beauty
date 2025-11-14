@@ -1,0 +1,6 @@
+@use '../abstracts';
+
+.bg-layout {
+    background-image: linear-gradient(to right, abstracts.$gray 70%, abstracts.$green 70%);
+    height: 75vh;
+}
