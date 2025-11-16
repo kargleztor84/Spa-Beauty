@@ -10,6 +10,12 @@
     align-items: center;
 }
 
+.hover {
+    color: white;
+    background-color: abstracts.$dark-blue;
+    border-radius: 30px;
+}
+
 header {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -24,7 +30,13 @@ header {
                 gap: 1rem;
     
                 a {
-                    padding: 7px 15px;
+                    padding: 5px 18px;
+                    border-radius: 20px;
+                    transition: .2s;
+
+                    &:hover {
+                        @extend .hover;
+                    }
                 }
     
                 .deaplegalble {
