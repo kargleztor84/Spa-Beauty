@@ -34,3 +34,10 @@
   }
 }
 
+@mixin flex($justify: normal, $aling: normal, $space: 0) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $aling;
+  gap: $space;
+}
+

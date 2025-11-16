@@ -1,6 +1,19 @@
 @use '../abstracts';
 
 .bg-layout {
-    background-image: linear-gradient(to right, abstracts.$gray 70%, abstracts.$green 70%);
+    position: relative;
+    background-image: linear-gradient(to right, abstracts.$gray 65%, abstracts.$green 65%);
     height: 75vh;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 5%;
+        right: 15%;
+        width: 550px;
+        height: 510px;
+        background-image: url(../../../img/flor-loto.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }

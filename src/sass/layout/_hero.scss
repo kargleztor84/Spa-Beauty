@@ -1,0 +1,100 @@
+@use '../abstracts';
+@use '../components/button';
+
+.flex {
+    display: flex;
+}
+
+.hero {
+    @extend .flex;
+    position: relative;
+
+    &__content {
+        flex: 2;
+
+        &--title {
+            font-size: 60px;
+            line-height: 84px;
+            margin-bottom: 32px;
+            width: 690px;
+            color: abstracts.$dark-blue;
+        }
+
+        &--text {
+            font-size: 22px;
+            width: 690px;
+            margin-bottom: 56px;
+        }
+
+        &--button {
+            @extend .flex;
+            margin-bottom: 90px;
+
+            &__btn1 {
+                @extend .btn;
+                margin-right: 42px;
+            }
+
+            &__btn2 {
+                padding: 12px 70px;
+                position: relative;
+    
+                &::before {
+                    content: '';
+                    width: 20px;
+                    height: 21px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-image: url(../../../img/play.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    padding: 24px;
+                    background-color: white;
+                    border-radius: 50%;
+                    box-shadow: 10px 15px 70px grey;
+                }
+            }
+        }
+
+        &--items {
+            background-color: white;
+            @include abstracts.flex(space-between, center, 50px);
+            width: 55%;
+            padding: 30px;
+            border-radius: 16px;
+            text-align: center;
+
+            img {
+                background-color: abstracts.$green;
+                width: 70px;
+                padding: 5px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+
+            h3 {
+                font-size: 30px;
+                font-weight: 500;
+                color: abstracts.$dark-blue;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+        }
+
+    }
+
+    &__texts {
+        flex: 1;
+    }
+    
+    .woman-img {
+        width: 800px;
+        position: absolute;
+        bottom: -113px;
+        right: 10%;
+    }
+}
