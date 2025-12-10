@@ -27,12 +27,12 @@ header {
         &__navbar {
             &--menu {
                 @extend .flex;
-                gap: 1rem;
     
                 a {
                     padding: 5px 18px;
                     border-radius: 20px;
                     transition: .2s;
+                    font-size: 14px;
 
                     &:hover {
                         @extend .hover;
@@ -59,19 +59,25 @@ header {
 
         &__nav {
             @extend .flex;
-            gap: 4.5rem;
+            gap: 4rem;
 
             &--items {
                 @extend .flex;
                 gap: 2rem;
+
+                img {
+                    width: 20px;
+                }
             }
 
             &--aut {
                 @extend .flex;
                 gap: 2.3rem;
+                margin-right: 60px;
 
                 &__btn1 {
                     position: relative;
+                    font-size: 14px;
                     
                     &::before {
                         content: '';
@@ -86,6 +92,7 @@ header {
                 &__btn2 {
                     @extend .btn;
                     position: relative;
+                    font-size: 14px;
                 }
             }
         }
