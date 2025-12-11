@@ -7,5 +7,5 @@ export default defineConfig ({
         }
     },
 
-    base: 'https://karlgeztor84.github.io/Spa-Beauty',
+    base: 'https://kargleztor84.github.io/Spa-Beauty',
 })
