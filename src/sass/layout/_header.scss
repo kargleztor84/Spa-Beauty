@@ -59,7 +59,7 @@ header {
 
         &__nav {
             @extend .flex;
-            gap: 4rem;
+            gap: 3rem;
 
             &--items {
                 @extend .flex;
@@ -72,8 +72,8 @@ header {
 
             &--aut {
                 @extend .flex;
-                gap: 2.3rem;
-                margin-right: 60px;
+                gap: 2rem;
+                margin-right: 50px;
 
                 &__btn1 {
                     position: relative;

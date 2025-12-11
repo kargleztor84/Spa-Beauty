@@ -13,17 +13,17 @@
         flex: 2;
 
         &--title {
-            font-size: 60px;
-            line-height: 75px;
+            font-size: 52px;
+            line-height: 60px;
             margin-bottom: 32px;
-            width: 690px;
+            width: 650px;
             color: abstracts.$dark-blue;
         }
 
         &--text {
-            font-size: 22px;
+            font-size: 18px;
             line-height: 32px;
-            width: 690px;
+            width: 600px;
             margin-bottom: 56px;
         }
 
@@ -98,7 +98,7 @@
         gap: 50px;
 
         & div {
-            width: 58%;
+            width: 60%;
             background-color: rgba(255, 255, 255, 0.563);
             backdrop-filter: blur(6px);
             padding: 20px;
