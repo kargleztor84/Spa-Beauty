@@ -7,5 +7,5 @@ export default defineConfig ({
         }
     },
 
-    base: './',
+    base: 'https://karlgeztor84.github.io',
 })
